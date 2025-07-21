@@ -1,11 +1,12 @@
 #include "Display.h"
 
 
+
 	Display::Display(char const* title, int windowWidth, int windowHeight, int textureWidth, int textureHeight)
 	{
 		SDL_Init(SDL_INIT_VIDEO);
 
-		window = SDL_CreateWindow(title, 0, 0, windowWidth, windowHeight, SDL_WINDOW_SHOWN);
+		window = SDL_CreateWindow(title, 100, 100, windowWidth, windowHeight, SDL_WINDOW_SHOWN);
 
 		renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 
